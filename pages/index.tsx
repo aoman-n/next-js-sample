@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
-import styled from "@emotion/styled";
+import { jsx, css } from '@emotion/core';
+import styled from '@emotion/styled';
 import Link from 'next/link'
+import Layout from '../components/Layout';
 
 const style = css`
   color: hotpink;
@@ -16,10 +17,13 @@ const StyledLink = styled.a`
 
 
 export default () => (
-  <div>
+  <Layout title="next-js-sample top page">
     <h1 css={style}>Next.jsアプリのトップページ</h1>
     <Link href="/about">
       <StyledLink>aboutへ！</StyledLink>
     </Link>
-  </div>
+    <Link href="/list">
+      <button>listへ</button>
+    </Link>
+  </Layout>
 );

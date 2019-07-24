@@ -1,5 +1,7 @@
+import Layout from '../components/Layout';
+
 export default () => (
-  <div>
+  <Layout title="next-js-sample about page">
     <h1>aboutページです！</h1>
-  </div>
+  </Layout>
 )
