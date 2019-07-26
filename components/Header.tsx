@@ -3,18 +3,21 @@ import { FC } from 'react';
 import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import Color from '../const/Color';
+import Size from '../const/Size';
 
 const headerStyle = css`
-  height: 70px;
+  height: ${Size.HEADER_HEIGHT}px;
   width: 100vw;
-  background-color: lightcyan;
+  background-color: ${Color.THEME.PRIMARY};
   display: flex;
 	justify-content: flex-end;
 	align-items: center;
   h1 {
     margin-right: auto;
-    font-size: 2em;
-    padding: 0 10px;
+    font-size: 1.3em;
+    color: ${Color.FONT.DARK};
+    padding: 0 20px;
     cursor: pointer;
     &:hover {
       opacity: 0.7;
@@ -25,6 +28,8 @@ const headerStyle = css`
     list-style: none;
     li {
       margin-right: 20px;
+      font-size: ${Size.FONT.BASE}px;
+      color: ${Color.FONT.DARK};
     }
   }
 `
