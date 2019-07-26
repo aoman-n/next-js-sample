@@ -10,6 +10,7 @@ export default class MyApp extends App {
         <Component {...pageProps} />
         <style jsx global>{`
           body {
+            margin: 0px;
           }
         `}</style>
       </Container>

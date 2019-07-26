@@ -1,7 +1,9 @@
 /** @jsx jsx */
+import { NextPage } from 'next';
 import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import Link from 'next/link'
+import Router from 'next/router'
 import Layout from '../components/Layout';
 
 const style = css`
@@ -15,15 +17,25 @@ const StyledLink = styled.a`
   cursor: pointer;
 `;
 
+const handler = () => {
+  Router.push({
+    pathname: '/about',
+  })
+};
 
-export default () => (
+const Index: NextPage = () => (
   <Layout title="next-js-sample top page">
     <h1 css={style}>Next.jsアプリのトップページ</h1>
-    <Link href="/about">
-      <StyledLink>aboutへ！</StyledLink>
-    </Link>
-    <Link href="/list">
-      <button>listへ</button>
-    </Link>
+    <ul>
+      <li><button onClick={handler}>handlerで遷移！</button></li>
+      <li><Link href="/about">
+        <StyledLink>aboutへ！</StyledLink>
+      </Link></li>
+      <li><Link href="/postList">
+        <StyledLink>post listへ！</StyledLink>
+      </Link></li>
+    </ul>
   </Layout>
 );
+
+export default Index;
