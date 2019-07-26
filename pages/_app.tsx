@@ -10,7 +10,6 @@ export default class MyApp extends App {
         <Component {...pageProps} />
         <style jsx global>{`
           body {
-            background-color: green;
           }
         `}</style>
       </Container>
