@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { NextPage } from 'next';
 import { FC } from 'react';
-import { jsx, css } from '@emotion/core';
-import styled from '@emotion/styled';
+import { jsx } from '@emotion/core';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 

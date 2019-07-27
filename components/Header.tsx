@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { FC } from 'react';
 import { jsx, css } from '@emotion/core';
-import styled from '@emotion/styled';
 import Link from 'next/link';
 import Color from '../const/Color';
 import Size from '../const/Size';
