@@ -1,9 +1,9 @@
-import { NextPage } from 'next'
+import { FC } from 'react';
 import { withRouter } from 'next/router'
 import { WithRouterProps } from 'next/dist/client/with-router'
 import Layout from '../components/Layout';
 
-const Post: NextPage<WithRouterProps & {}> = ({ router }) => {
+const Post: FC<WithRouterProps & {}> = ({ router }) => {
   const title = String(router.query.title);
 
   return (

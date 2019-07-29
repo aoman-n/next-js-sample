@@ -35,5 +35,7 @@ app.prepare().then(() => {
   server.use(router.routes());
 
   // server(Koa)の起動
-  server.listen(port);
+  server.listen(port, () => {
+    console.log('start server...');
+  });
 });

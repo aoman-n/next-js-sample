@@ -25,7 +25,7 @@
     "resolveJsonModule": true,
     "strictNullChecks": true,
     "noEmit": false,
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es2017",
     "lib": [
       "es2017"

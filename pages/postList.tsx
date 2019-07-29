@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import { NextPage } from 'next';
 import { FC } from 'react';
 import { jsx } from '@emotion/core';
 import Link from 'next/link';
@@ -20,7 +19,7 @@ const PostLink: FC<{ title: string }> = ({ title }) => (
   ><a>{title}</a></Link>
 );
 
-const PostList: NextPage = () => (
+const PostList: FC = () => (
   <Layout title="list page">
     <h1>リストページ</h1>
     <ul>

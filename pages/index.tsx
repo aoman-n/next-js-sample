@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { NextPage } from 'next';
+import { FC } from 'react';
 import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import Link from 'next/link'
@@ -23,7 +23,7 @@ const handler = () => {
   })
 };
 
-const Index: NextPage = () => (
+const Index: FC = () => (
   <Layout title="next-js-sample top page">
     <h1 css={style}>Next.jsアプリのトップページ</h1>
     <ul>
