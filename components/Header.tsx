@@ -15,7 +15,8 @@ const headerStyle = css`
   h1 {
     margin-right: auto;
     font-size: 1.3em;
-    color: ${Color.FONT.DARK};
+    color: #FFFFFF;
+    text-shadow: 2px 2px 3px ${Color.FONT.DARK};
     padding: 0 20px;
     cursor: pointer;
     &:hover {
@@ -28,7 +29,7 @@ const headerStyle = css`
     li {
       margin-right: 20px;
       font-size: ${Size.FONT.BASE}px;
-      color: ${Color.FONT.DARK};
+      color: #FFFFFF;
     }
   }
 `
